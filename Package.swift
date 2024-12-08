@@ -11,19 +11,7 @@ let package = Package(
     targets: [
         .target(name: "SwiftCSSL", dependencies: [
             "ssl",
-            "sshkey"
         ]),
-        .target(
-            name: "sshkey",
-            dependencies: [],
-            sources: [
-                "./sshkey.c",
-                "./include/sshkey.h"
-            ],
-            cSettings: [
-                .headerSearchPath("./include")
-            ]
-        ),
         .binaryTarget(
             name: "ssl",
             url: "https://github.com/GitSwiftLLC/SwiftCSSL/releases/download/3.4.0/openssl.xcframework.zip",

@@ -1,0 +1,21 @@
+// swift-tools-version:5.9
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "SwiftCSSL",
+    products: [
+        .library(name: "SwiftCSSL", targets: ["SwiftCSSL"]),
+    ],
+    targets: [
+        .target(name: "SwiftCSSL", dependencies: [
+            "ssl"
+        ]),
+        .binaryTarget(
+            name: "ssl",
+            url: "__DOWNLOAD_URL__",
+            checksum: "__CHECKSUM__"
+        ),
+    ]
+)

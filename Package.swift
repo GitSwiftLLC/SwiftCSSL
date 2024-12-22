@@ -10,12 +10,12 @@ let package = Package(
     ],
     targets: [
         .target(name: "SwiftCSSL", dependencies: [
-            "ssl",
+            "ssl"
         ]),
         .binaryTarget(
             name: "ssl",
             url: "https://github.com/GitSwiftLLC/SwiftCSSL/releases/download/3.4.0/openssl.xcframework.zip",
-            checksum: "8f07d65d3f8bcd0f6ce6c917f7de3f0eff80dbc9b076a391c10b3535c47fa69a"
+            checksum: "6efe9ea5f4de44a9fba4a535d66a0fe883f53578dc9613220ad988f27b78c8e1"
         ),
     ]
 )
